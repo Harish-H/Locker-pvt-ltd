@@ -68,8 +68,8 @@ void addFile()
 		if (option.equalsIgnoreCase("Y"))
 		{
 			System.out.println("Enter contents to written in file :");
-			String contents=s.nextLine();
-			
+			String contents=new Scanner(System.in).nextLine();
+			System.out.println(contents);
 			FileWriter writer = new FileWriter(stockFile);
 			
 			writer.write(contents);
